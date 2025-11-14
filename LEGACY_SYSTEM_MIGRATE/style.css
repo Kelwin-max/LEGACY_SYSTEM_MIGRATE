@@ -1,0 +1,122 @@
+:root {
+    --color-bg-dark: #0A0A15;
+    --color-bg-subtle: #1C1C2E;
+    --color-text-light: #F0F5FF;
+    --color-accent-ciano: #00E6FF; 
+    --color-accent-magenta: #FF00E6; 
+    --color-border-glass: rgba(255, 255, 255, 0.1);
+    --color-ui-bg-glass: rgba(28, 28, 46, 0.6);
+    --font-code: 'Share Tech Mono', monospace;
+}
+
+/* Base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: var(--font-code);
+    color: var(--color-text-light);
+    background-color: var(--color-bg-dark);
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+.main-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Header */
+.header-unit {
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border-glass);
+    color: var(--color-accent-ciano);
+}
+
+/* Glassmorphism */
+.glass-panel {
+    background: var(--color-ui-bg-glass);
+    backdrop-filter: blur(10px) saturate(1.5);
+    border: 1px solid var(--color-border-glass);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Formulário e Inputs */
+h2 {
+    color: var(--color-accent-magenta);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.form-field { margin-bottom: 15px; }
+label {
+    display: block;
+    color: var(--color-accent-ciano);
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--color-accent-magenta);
+    color: var(--color-text-light);
+    border-radius: 4px;
+    outline: none;
+}
+input:focus {
+    border-color: var(--color-accent-ciano);
+    box-shadow: 0 0 5px var(--color-accent-ciano);
+}
+
+.action-btn {
+    padding: 10px 20px;
+    background-color: var(--color-accent-ciano);
+    color: var(--color-bg-dark);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.action-btn:hover {
+    background-color: var(--color-accent-magenta);
+    box-shadow: 0 0 10px var(--color-accent-magenta);
+}
+
+/* Tabela de Usuários */
+.user-list-module {
+    overflow-x: auto;
+}
+#userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+#userTable th, #userTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border-glass);
+}
+#userTable th {
+    color: var(--color-accent-ciano);
+    font-weight: normal;
+    background-color: rgba(0, 230, 255, 0.05);
+}
+
+.message-status {
+    margin-top: 15px;
+    color: var(--color-accent-magenta);
+}
+
+/* Footer */
+.system-footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: rgba(240, 245, 255, 0.4);
+}
