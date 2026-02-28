@@ -1,4 +1,4 @@
-Legacy System Migrate
+##Legacy System Migrate##
 Este projeto faz parte de um estudo de caso focado na modernização de sistemas legados. O objetivo central é documentar e executar a transição de uma arquitetura monolítica baseada em PHP Nativo para uma estrutura de API moderna e escalável utilizando Java e React.
 Descrição do Projeto
 Muitas empresas enfrentam o desafio de manter softwares antigos que são vitais para a operação, mas possuem tecnologias defasadas. Este repositório demonstra o processo de mapeamento da lógica de negócio existente e a implementação de boas práticas de segurança e performance durante a migração da stack tecnológica.
